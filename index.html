@@ -23,7 +23,7 @@
             background-color: #ffcc00; /* Fakultätsfarbe Gelb */
             color: #333;
             text-align: center;
-            padding: 40px 20px;
+            padding: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
@@ -33,15 +33,13 @@
 
         /* Logo-Styling */
         .logo {
-            max-width: 100px;
-            margin-bottom: 15px;
-            border-radius: 50%;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            width: 300px; /* Zeigt das Logo in voller Größe an */
+            margin-bottom: 10px;
         }
 
         h1 {
             margin: 10px 0;
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: 600;
             color: #333;
         }
@@ -68,6 +66,35 @@
             font-size: 1em;
             line-height: 1.6;
             color: #555;
+        }
+
+        /* PDF-Anzeige */
+        .pdf-container {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* PDF-Download-Link */
+        .download-link {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 20px 0;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .download-link:hover {
+            background-color: #555;
+            transform: translateY(-2px);
         }
 
         /* Video-Abschnitt */
@@ -100,7 +127,7 @@
             display: inline-block;
             padding: 12px 30px;
             color: #333;
-            background-color: #ffcc00; /* Fakultätsfarbe */
+            background-color: #ffcc00;
             border: none;
             border-radius: 25px;
             cursor: pointer;
@@ -123,14 +150,14 @@
 
     <!-- Header mit Logo und Titel -->
     <header>
-        <img src="logo.png" alt="HTW Saar Logo" class="logo"> <!-- Platzhalter für das Logo -->
+        <img src="image.png" alt="HTW Saar Logo" class="logo"> <!-- Zeigt das Logo in voller Größe an -->
         <h1>Campus Rotenbühl Wegweiser</h1>
         <p>Erkunde unseren Campus und finde deinen Weg an der HTW Saar.</p>
     </header>
 
     <!-- Hauptinhalt -->
     <div class="container">
-        
+
         <!-- Video-Einführung -->
         <section>
             <h2>Erster Eindruck vom Campus</h2>
@@ -139,6 +166,16 @@
                 <!-- Eingebettetes YouTube-Video -->
                 <iframe src="https://www.youtube.com/embed/zLOsksQYCkc" allowfullscreen></iframe>
             </div>
+        </section>
+
+        <!-- Interaktive PDF-Einbindung -->
+        <section>
+            <h2>Campusplan</h2>
+            <p>Nutze den interaktiven Campusplan, um alle wichtigen Standorte wie die Bibliothek, die Mensa und verschiedene Labore zu finden.</p>
+            <div class="pdf-container">
+                <embed src="Orientierungsplan_CRB_072017 (1).pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <a href="Orientierungsplan_CRB_072017 (1).pdf" download class="download-link">Campusplan herunterladen</a>
         </section>
 
         <!-- Calendly-Einbindung -->
