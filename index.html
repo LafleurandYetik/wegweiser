@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTW Saar Campus Rotenbühl Wegweiser</title>
+    <style>
+        /* Grundlegendes Layout und Ästhetik */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header mit Logo */
+        header {
+            width: 100%;
+            background-color: #ffcc00; /* Fakultätsfarbe Gelb */
+            color: #333;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 3px solid #e6b800;
+        }
+
+        /* Logo-Styling */
+        .logo {
+            max-width: 100px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #333;
+            border-left: 4px solid #ffcc00;
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Video-Abschnitt */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Calendly-Abschnitt */
+        .calendly-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .calendly-button {
+            display: inline-block;
+            padding: 12px 30px;
+            color: #333;
+            background-color: #ffcc00; /* Fakultätsfarbe */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .calendly-button:hover {
+            background-color: #e6b800;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header mit Logo und Titel -->
+    <header>
+        <img src="logo.png" alt="HTW Saar Logo" class="logo"> <!-- Platzhalter für das Logo -->
+        <h1>Campus Rotenbühl Wegweiser</h1>
+        <p>Erkunde unseren Campus und finde deinen Weg an der HTW Saar.</p>
+    </header>
+
+    <!-- Hauptinhalt -->
+    <div class="container">
+        
+        <!-- Video-Einführung -->
+        <section>
+            <h2>Erster Eindruck vom Campus</h2>
+            <p>In diesem Video bekommst du einen ersten Überblick über den Campus Rotenbühl und die Möglichkeiten, die er dir bietet.</p>
+            <div class="video-container">
+                <!-- Eingebettetes YouTube-Video -->
+                <iframe src="https://www.youtube.com/embed/zLOsksQYCkc" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Calendly-Einbindung -->
+        <section class="calendly-container">
+            <h2>Besichtigungstermin buchen</h2>
+            <p>Vereinbare einen Termin für eine persönliche Campusführung über Calendly.</p>
+            <a href="https://calendly.com/d/cmw9-99j-qry/campus-rotenbuhl" target="_blank" class="calendly-button">Termin buchen</a>
+        </section>
+    </div>
+
+    <!-- JavaScript zur Optimierung der Benutzerfreundlichkeit -->
+    <script>
+        console.log("Willkommen auf dem Campus-Wegweiser der HTW Saar!");
+    </script>
+
+</body>
+</html>
