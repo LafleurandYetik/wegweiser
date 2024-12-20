@@ -44,6 +44,33 @@
             color: #333;
         }
 
+        /* Navigationsleiste */
+      
+        nav {
+            width: 100%;
+            background-color: #ffcc00; /* Gelb als Hintergrund */
+            display: flex;
+            justify-content: center;
+            padding: 5px 0; /* Weniger vertikaler Abstand */
+        }
+
+        nav a {
+            color: #333; /* Dunkelgrau statt Weiß für bessere Lesbarkeit */
+            text-decoration: none;
+            padding: 8px 20px;
+            font-size: 0.9em; /* Kleinere Schrift */
+            font-weight: normal; /* Weniger betont */
+            margin: 0 15px; /* Mehr Abstand zwischen den Links */
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #e6b800; /* Dunkleres Gelb bei Hover */
+            transform: translateY(-1px); /* Geringer Anstieg */
+        }
+
+        /* Hauptinhalt */
         .container {
             max-width: 800px;
             width: 90%;
@@ -144,22 +171,47 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
+        /* Footer */
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
+
+
 
     <!-- Header mit Logo und Titel -->
     <header>
         <img src="logo.png" alt="HTW Saar Logo" class="logo"> <!-- Zeigt das Logo in voller Größe an -->
         <h1>Campus Rotenbühl Wegweiser</h1>
         <p>Erkunde unseren Campus und finde deinen Weg an der HTW Saar.</p>
+		    <!-- Navigationsleiste -->
+    <nav>
+        <a href="index.html#ersterEindruck">Erster Eindruck</a>
+        <a href="index.html#campusplan">Campusplan</a>
+        <a href="index.html#besichtigung">Besichtigungstermin</a>
+        <a href="impressum.html">Impressum</a>
+    </nav>
     </header>
 
     <!-- Hauptinhalt -->
     <div class="container">
 
         <!-- Video-Einführung -->
-        <section>
+        <section id="ersterEindruck">
             <h2>Erster Eindruck vom Campus</h2>
             <p>In diesem Video bekommst du einen ersten Überblick über den Campus Rotenbühl und die Möglichkeiten, die er dir bietet.</p>
             <div class="video-container">
@@ -169,7 +221,7 @@
         </section>
 
         <!-- Interaktive PDF-Einbindung -->
-        <section>
+        <section id="campusplan">
             <h2>Campusplan</h2>
             <p>Nutze den interaktiven Campusplan, um alle wichtigen Standorte wie die Bibliothek, die Mensa und verschiedene Labore zu finden.</p>
             <div class="pdf-container">
@@ -179,12 +231,17 @@
         </section>
 
         <!-- Calendly-Einbindung -->
-        <section class="calendly-container">
+        <section id="besichtigung" class="calendly-container">
             <h2>Besichtigungstermin buchen</h2>
             <p>Vereinbare einen Termin für eine persönliche Campusführung über Calendly.</p>
             <a href="https://calendly.com/d/cmw9-99j-qry/campus-rotenbuhl" target="_blank" class="calendly-button">Termin buchen</a>
         </section>
     </div>
+
+    <!-- Footer mit Impressum -->
+    <footer id="impressum">
+        <p>&copy; 2024 HTW Saar. <a href="impressum.html">Impressum</a></p> <!-- Impressum-Link im Footer -->
+    </footer>
 
     <!-- JavaScript zur Optimierung der Benutzerfreundlichkeit -->
     <script>
